@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d tranformation</title>
+    <style>
+        
+        
+        .d1{
+            width: 200px;
+            height: 200px;
+            border:2px solid red;
+            background-color: antiquewhite;
+            perspective: 700px;
+        }
+        .bx{
+            width: 200;
+            height: 200px;
+            color: wheat;
+            background-color: green;
+            transform: translate3d(30px, 30px, 45px);
+        }
+        .d2{
+            width: 200px;
+            height: 200px;
+            border:2px solid red;
+            background-color: antiquewhite;
+            perspective: 700px;
+        }
+        .bn{
+            width: 200;
+            height: 200px;
+            color: wheat;
+            background-color: green;
+            transform: rotate3d(0,1,0,75deg);
+        }
+        .d3{
+            width: 200px;
+            height: 200px;
+            border:2px solid red;
+            background-color: antiquewhite;
+            perspective: 700px;
+        }
+        .bz{
+            width: 200;
+            height: 200px;
+            color: wheat;
+            background-color: green;
+            transform: scale3d(1,1,2) rotate3d(1,0,0,75deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="d1">
+        <div class="bx"><span style="font-size: 9em;">&spades;</span></div>
+    </div>
+    <br>
+    <br><br>
+    <div class="d2">
+        <div class="bn"><span style="font-size: 9em;">&spades;</span>
+
+        </div>
+    </div>
+    <br> <br><br>
+    <div class="d3">
+        <div class="bz"><span style="font-size: 9em;">&spades;</span></div>
+    </div>
+    
+</body>
+</html>

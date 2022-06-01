@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .d2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(25,40,3);
+            border: 8px solid green;
+            /* animation-name: Anim2; */
+            /* animation-duration: 5s; */
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: 2; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease; */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: linear */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* shorthand property */
+            /* animation: Anim2 2s 0s ease alternate; */
+            animation: Anim2 2s 0s infinite;
+        }
+        @keyframes Anim2{
+            0%{
+               background-color: aqua; 
+               border-color: blue;
+            }
+            25%{
+                background-color: blue; 
+               border-color: red;
+            }
+            50%{
+                background-color: red; 
+               border-color: green;
+            }
+            75%{
+                background-color: green; 
+               border-color: yellow;
+            }
+            100%{
+                background-color: yellow; 
+               border-color: black;
+            }
+        }
+        .d1{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(25,40,3);
+            border: 8px solid green;
+            animation-name: Anim1;
+            animation-duration: 3s;
+            animation-delay: 2s;
+        }
+        @keyframes Anim1{
+            from{
+                background-color: rgb(25,40,3);
+                border-radius: 5px;
+                border-color: green;
+            }
+            to{
+                background-color: yellow;
+                border-color: orangered;
+                border-radius: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="d1"></div>
+    <br> <br>
+    <div class="d2"></div>
+</body>
+</html>

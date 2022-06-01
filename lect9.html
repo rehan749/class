@@ -18,11 +18,38 @@
             width: 150px;
             height: 32px;
         }
+        [class~="success"]{
+            color: orange;
+        }
+        a[href^="https://"]{
+            color: magenta;
+            padding: 10px;
+            background-color: aqua;
+        }
+        a[href$=".pdf"]{
+            background-color: bisque;
+            color: white;
+            padding: 5px;
+        }
+        [class*="danger"]{
+            color: rgb(243, 45, 111);
+        }
+        .danger{
+            color: aqua;
+        }
     </style>
 </head>
 <body>
     <input type="submit" value="click me">
     <input type="text" title="">
     <p title="">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    <div class="text-right success">Lorem ipsum dolor sit amet.</div>
+    <div class="danger success">Lorem, ipsum dolor.</div>
+    <br>
+    <a href="https://www.facebook.com">facebook</a>
+    <br> <br> <br>
+    <a href="mahtabcv.pdf">dwonload pdf</a><br>
+    <a href=""></a>
+
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap & Flex Flow</title>
+    <!-- flex-wrap -->
+    <!-- nowrap
+    wrap
+    wrap reverse
+    flex-flow is shorthand of : flex-direction & flex wrap -->
+</head>
+<style>
+    .container {
+        background-color: bisque;
+        width: 500px;
+        height: 250px;
+        margin: 30px;
+        padding: 50px;
+        border: 1px solid black;
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        flex-direction: column-reverse;
+        /* flex-wrap: nowrap; (default) */
+        /* flex-wrap: wrap; */
+        flex-wrap: wrap-reverse;
+        /* shorthand property */
+        /* flex-flow: column wrap-reverse; */
+    }
+
+    .E1 {
+        background-color: blueviolet;
+    }
+
+    .E2 {
+        background-color: burlywood;
+    }
+
+    .E3 {
+        background-color: cadetblue;
+    }
+
+    .E4 {
+        background-color: coral;
+    }
+
+    .E5 {
+        background-color: green;
+    }
+
+    .E6 {
+        background-color: red;
+    }
+
+    .E7 {
+        background-color: teal;
+    }
+
+    .E8 {
+        background-color: orange;
+    }
+
+    .elem {
+        color: white;
+        width: 50px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+    <div class="E1 elem">1</div>
+    <div class="E2 elem">2</div>
+    <div class="E3 elem">3</div>
+    <div class="E4 elem">4</div>
+    <div class="E5 elem">5</div>
+    <div class="E6 elem">6</div>
+    <div class="E7 elem">7</div>
+    <div class="E8 elem">8</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <!-- absolute/fixed react according to screen area   -->
+    <!-- relative/sticky react according to parent -->
+    <style>
+        .container{
+            display: flex;
+            height: 160vh;
+            width: 100%;
+            border: 2px solid black;
+            
+        }
+        .d1{
+            width: 500px;
+            height: 200px;
+            background-color: aquamarine;
+            margin: 5px;
+            
+        }
+        .d2{
+             width: 300px;
+             height: 200px;
+             background-color: black;
+             margin: 5px;
+             /* position: absolute; */
+             /* position: relative; */
+             /* position: fixed;
+             bottom: 0px;
+             right: 0px; */
+             position: sticky;
+             left: 0px;
+             top: 10px;
+        }
+        .d3{
+            width: 500px;
+            height: 200px;
+            background-color: blue;
+            margin: 5px;
+            border: 2px solid black;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    </div>
+</body>
+</html>

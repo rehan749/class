@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self(applicable on single item)</title>
+    <!-- align-self values:
+    auto
+     flex-start
+    flex-end
+stretch
+center
+baseline -->
+    <style>
+         .container{
+            background-color: bisque;
+            width: 900px;
+            height: 200px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            /* To make conatiner flex */
+            display: flex;
+            /* align-items: flex-start; */
+         }
+        .E1 {
+            background-color: red;
+        }
+
+        .E2 {
+            background-color: yellow;
+        }
+
+        .E3 {
+            background-color: green;
+            
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            align-self:center;
+           
+        }
+
+        .E4 {
+            background-color: blue;
+        }
+
+        .elem {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            height: 70px;
+            width: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="E1 elem">1</div>
+        <div class="E2 elem">2</div>
+        <div class="E3 elem">3</div>
+        <div class="E4 elem">4</div>
+    </div>
+</body>
+
+</html>

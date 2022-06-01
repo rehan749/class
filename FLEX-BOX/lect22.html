@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items -Verticle Alignment</title>
+    <!-- Align Items Value:
+    flex-start
+    flex-end
+    center
+    stretch
+    base-line -->
+    <style>
+        .container {
+            background-color: bisque;
+            width: 90%;
+            height: 500px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+           /* flex-wrap: wrap; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end;  */
+        align-items: center; 
+            /* align-items: baseline; */
+            /* align-items: stretch; */
+        }
+
+        .E1 {
+            background-color: blueviolet;
+            font-size: 12px;
+        }
+
+        .E2 {
+            background-color: burlywood;
+        }
+
+        .E3 {
+            background-color: cadetblue;
+           
+            font-size: 30px;
+        }
+
+        .E4 {
+            background-color: coral;
+        }
+
+
+        .elem {
+            color: white;
+          margin: 5px;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 10px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="E1 elem">e1</div>
+        <div class="E2 elem">e2</div>
+        <div class="E3 elem">e3</div>
+        <div class="E4 elem">e4</div>
+    </div>
+</body>
+
+</html>

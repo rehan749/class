@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon-32x32.png" type="img/icon">
+    <title>National Garden</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(224, 211, 194);
+        }
+
+        .header {
+            background-color: #fff;
+            width: 50%;
+            height: 1300px;
+
+            /* text-align: center; */
+            margin-left: 330px;
+        }
+
+        .logo {
+            /* border: 2px solid black; */
+            display: inline-block;
+
+
+        }
+
+        .logo img {
+            height: 30px;
+            width: 40px;
+            display: inline-block;
+            margin: 9px 5px;
+        }
+
+        h3 {
+            float: right;
+            margin: 13px -2px;
+            font-size: 20px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: inline-block;
+            margin: 13px 9px 10px 104px;
+            position: absolute;
+        }
+
+        .mid p {
+            margin-bottom: 10px;
+            word-spacing: 11px;
+            cursor: pointer;
+        }
+
+        .right {
+
+            /* display: inline-block; */
+            /* right: 34px; */
+            display: inline-block;
+            position: absolute;
+            margin: 9px 5px 7px 416px;
+
+        }
+
+        .right .btn {
+            border: 1px solid green;
+            color: green;
+            border-radius: 4px;
+
+            padding: 7px 12px;
+            margin: 4px 22px;
+
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: #fff;
+            background-color: green;
+        }
+
+        .content h1 {
+            margin-left: 20px;
+            margin-top: 37px;
+        }
+
+        .content span {
+            color: green;
+        }
+
+        .content p {
+            color: silver;
+            margin-left: 20px;
+        }
+
+        .content .btn {
+            background-color: green;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 4px;
+            border: none;
+            padding: 13px;
+            cursor: pointer;
+        }
+
+        .content img {
+
+            height: 287px;
+            width: 310px;
+
+            top: 56px;
+            right: 470px;
+            position: absolute;
+        }
+
+        .services {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .services h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .services p {
+            color: #777;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .services-col {
+            /* flex-basis: 31%;
+     background: #fff3f3; 
+    border-radius: 10%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s; */
+        }
+
+        .services-col img {
+            height: 200px;
+            width: 200px;
+            margin: -10px 0px 0px -5px;
+
+        }
+
+        .services-col h3 {
+            margin: 0px 40px 0px 1px;
+        }
+
+        .services-col p {
+            font-size: 12px;
+            margin-top: 25px;
+        }
+
+        .services-col button {
+            background-color: green;
+            color: #fff;
+            padding: 13px 21px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(109, 163, 27);
+        }
+
+        .Testimonials {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+            cursor: pointer;
+        }
+
+        .Testimonials p {
+            font-size: 18px;
+        }
+
+        .tesi-col img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .tesi-col h4 {
+            margin-top: 10px;
+            font-size: 21px;
+        }
+
+        .tesi-col p {
+            font-size: 12px;
+            margin-top: 21px;
+            color: #777;
+        }
+
+        .icons .fab {
+            color: red;
+            margin: 14px 5px;
+        }
+
+        .footer {
+            height: 360px;
+            background-color: rgb(60, 83, 60);
+            width: 50%;
+            margin-left: 330px;
+        }
+
+        .foot-col img {
+            height: 55px;
+            width: 60px;
+            margin-left: 13px;
+            position: absolute;
+
+        }
+
+        .foot-col h2 {
+            margin-left: 79px;
+            margin-top: 6px;
+            font-weight: bold;
+            color: white;
+            font-family: system-ui;
+            font-size: 29px;
+        }
+
+        .foot-col h4 {
+            color: white;
+            margin: 23px 41px 17px;
+            font-size: 25px;
+        }
+
+        .foot-col p {
+            margin-left: 38px;
+            color: white;
+            font-size: 15px;
+        }
+
+        .foot-col1 {
+            /* width: 150px; */
+        }
+
+        .foot-col1 h3 {
+
+            color: #fff;
+            margin-right: 13px;
+            /* margin-bottom: 20px; */
+            font-size: 22px;
+        }
+
+        .foot-col1 ul {
+            list-style: none;
+            margin: 63px 0px 0px 84px;
+        }
+
+        li {
+
+            margin-top: 25px;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .foot-col2 h3 {
+            color: #fff;
+            margin: 19px 110px;
+        }
+
+        .foot-col2 p {
+            color: white;
+            padding: 10px 66px 14px 70px;
+        }
+        a .fab{
+            color: #fff;
+            padding: 0px 10px 0px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png">
+            <h3>YOUR LOGO</h3>
+        </div>
+        <div class="mid">
+            <p>ourservices pricing</p>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+        </div>
+
+        <div class="content">
+            <h1>National <br> <span>Garden</span> <br> Month</h1>
+            <p>Lorem ipsum dolor <br> sit amet consectetur <br> adipisicing elit.</p>
+            <button class="btn">Join our website</button>
+            <img src="model.png" alt="">
+        </div>
+        <section class="services">
+            <h1>Services</h1>
+            <p>Lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+            <div class="row">
+                <div class="services-col">
+                    <img src="water.png" alt="">
+                    <h3>Maintenance</h3>
+                    <p>Lorem ipsum dolor sit amet,
+                        <br> consectetur adipiscing elit.
+                    </p>
+                    <button>KNOW MORE</button>
+                </div>
+
+                <div class="services-col">
+                    <img src="cuting.png" alt="">
+                    <h3>Prune</h3>
+                    <p>Lorem ipsum dolor sit amet,
+                        <br> consectetur adipiscing elit.
+                    </p>
+                    <button>KNOW MORE</button>
+                </div>
+
+                <div class="services-col">
+                    <img src="tree.png" alt="">
+                    <h3> Cultivation</h3>
+                    <p>Lorem ipsum dolor sit amet,
+                        <br> consectetur adipiscing elit.
+                    </p>
+                    <button>KNOW MORE</button>
+                </div>
+            </div>
+        </section>
+        <section class="Testimonials">
+            <h1>Testimonials</h1>
+            <p> Lorem ipsum dolor amet, consectetur adipiscing elit.</p>
+            <div class="row">
+                <div class="tesi-col">
+                    <img src="pro1.png" alt="">
+                    <h4>Robert Mon</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet <br>
+                        consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="tesi-col">
+                    <img src="prof2.png" alt="">
+                    <h4>Andrea Matt</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet <br>
+                        consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="tesi-col">
+                    <img src="prof3.png">
+                    <h4>Amanda Will</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet <br>
+                        consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="footer">
+        <br> <br>
+        <hr size="1">
+        <section class="foot">
+            <div class="row">
+                <div class="foot-col">
+                    <img src="logo1.png">
+                    <h2>YOUR LOGO</h2>
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet <br>
+                        consectetur, adipisicing elit.</p>
+                </div>
+                <div class="foot-col1">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Blog</a> </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Suscribe</a></li>
+
+                    </ul>
+                </div>
+                <div class="foot-col2">
+                    <h3>Contact</h3>
+                    <p>info@company.com</p>
+                    <p>Help Center</p>
+                    <p>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a></p>
+                </div>
+                
+            </div>
+            <br>
+            <hr size="1">
+        </section>
+
+
+
+</body>
+
+</html>

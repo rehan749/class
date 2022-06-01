@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <!-- Flex Basis work like Max-width  -->
+    <!-- if we use width flex-grow it will work like min-width  -->
+    <style>
+         .container{
+            background-color: bisque;
+            width: 50%;
+            height: 600px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            /* To make conatiner flex */
+            display: flex;
+            /* flex-direction: row; */  /* (for change width) */
+             flex-direction: column;  /*(for change height) */
+        }
+        .E1{
+            background-color: blue;
+            flex-basis: 200px;
+        }
+        .E2{
+            background-color: red;
+            
+        }
+        .E3{
+            background-color: green;
+            flex-basis: 150px;
+        }
+        .E4{
+            background-color: yellow;
+           
+        }
+        .elem{
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            flex-grow: 1;
+            height: 90px;
+            width: 100px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="E1 elem">1</div>
+        <div class="E2 elem">2</div>
+        <div class="E3 elem">3</div>
+        <div class="E4 elem">4</div>
+    </div>
+</body>
+</html>

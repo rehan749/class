@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-timing-function</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        transition: width 2s;
+        margin-top: 10px;
+    }
+    div:hover{
+        width: 500px;
+    }
+    #b1{
+        transition-timing-function:ease ;
+    }
+    #b2{
+        transition-timing-function: linear;
+    }
+    #b3{
+        transition-timing-function: ease-in;
+    }
+    #b4{
+        transition-timing-function: ease-out;
+    }
+    #b5{
+        transition-timing-function: ease-in-out;
+    }
+   
+
+</style>
+<body>
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    <div id="b5"></div>
+   
+</body>
+</html>

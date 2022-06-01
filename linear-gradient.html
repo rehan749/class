@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grd{
+            background: linear-gradient(red, yellow);
+            width: 200px;
+            height: 200px;
+        }
+        /* from left to right*/
+        .grd2{
+            background: linear-gradient(to right, green, orange);
+            width: 200px;
+            height: 200px;
+        }
+        /* */
+        .grd3{
+            background: linear-gradient(to top right, rgb(172, 172, 241),black);
+            width: 200px;
+            height: 200px;
+        }
+        /* angle gradient */
+        .grd4{
+            background: linear-gradient(60deg,red,green);
+            width: 200px;
+            height: 200px;
+        }
+        /*multiple color */
+        .grd5{
+            background: linear-gradient(red , green, yellow);
+            width: 200px;
+            height: 200px;
+        }
+        .grd6{
+              background: linear-gradient(red 15%, green 45%, blue);
+              width: 200px;
+            height: 200px;
+        }
+        /* for radial */
+        .grd7{
+            background: radial-gradient(red, green,orange);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .grd8{
+            background: radial-gradient(circle, green, yellow, red);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+       .grd9{ background: radial-gradient(ellipse, green, yellow, red);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+    }
+    .grd10{
+          background: -webkit-radial-gradient(right top, circle, green, yellow, red);
+            width: 200px;
+            height: 200px;
+            
+    }
+    </style>
+</head>
+<body>
+    <div class="grd10"></div>
+    <div class="grd9"></div>
+    <div class="grd8"></div>
+    <div class="grd"></div>
+    <div class="grd2"></div>
+    <div class="grd3"></div>
+    <div class="grd4"></div>
+    <div class="grd5"></div>
+    <div class="grd6"></div>
+    <div class="grd7"></div>
+</body>
+</html>
